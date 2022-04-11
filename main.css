@@ -1,0 +1,256 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+.title-u{
+	font-family: 'Ubuntu';
+	letter-spacing: 0.02em;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.container {
+	width: 1171px;
+	margin: 0 auto;		
+}
+
+.header {
+	background: rgba(77,189,254,1);
+	background: -moz-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+	background: -webkit-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -o-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -ms-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: linear-gradient(to right, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbdfe', endColorstr='#3790d9', GradientType=1 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44abef', endColorstr='#3790d9', GradientType=1 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#473e5f', endColorstr='#2a2240', GradientType=1 );
+	padding-top: 100px;
+	padding-bottom: 144px;
+	color: #fff;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;/*добавил*/
+}
+
+.offer {
+	/* margin-top: 176px; убрал*/
+	width: 600px;
+}
+
+.title {
+	font-size: 37px;
+}
+
+.title span {
+	font-size: 59px;
+}
+
+.intro {
+	font-size: 16px;
+	margin-bottom: 37px;
+	margin-top: 30px;
+	width: 400px;
+}
+
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	background: #ffd429;
+	color: #000;
+	display: block;
+	width: 222px;
+	padding: 19px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #d9860e;
+}
+
+.desktop {
+	margin: 60px -30px 0px -30px;	
+}
+
+.learn {
+	font-family: 'Ubuntu';
+	letter-spacing: 0.1em;
+	text-align: center;
+	padding-top: 108px;
+	padding-bottom: 120px;	
+}
+
+.imgs{
+	margin: 20px 20px 30px 20px;
+}
+
+.section-title {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+}
+
+.skills {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;	
+}
+
+.skill {
+	width: 289px;
+	text-align: center;	
+}
+
+.skill-title {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.skill-text {
+	font-family: 'Ubuntu:400';
+	line-height: 1.2em;
+	letter-spacing: 0.05em;
+}
+
+.mail {
+	background: #ecf3f8;
+	padding-top: 105px;
+	padding-bottom: 190px;
+	text-align: center;
+}
+
+.section-title2{
+	font-family: 'Ubuntu:900';
+	margin: 50px 0px 30px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.form {
+	margin-top: 40px;	
+}
+
+.input {	
+	width: 341px;
+	border: 1px solid #bfb8d1;
+	font-family: 'Ubuntu';
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	height: 54px;
+	padding-left: 24px;
+	display: block;
+	margin: 16px auto;
+}
+
+.btn-form {
+	border: 0;
+	max-width: 341px;
+	width: 100%;
+	cursor: pointer;
+	display: inline;
+}
+
+.footer {
+	padding: 63px 0;
+	background: #164d7a;
+}
+
+.credits {
+	font-family: 'Open Sans';
+	color: #f4f6f8;
+	font-size: 14px;
+	text-align: center;
+	margin: 0;	
+}
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+	.btn{
+		background: green;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	.desktop {
+		display: block;
+	    width: 549px;
+	    margin: 72px auto 0;
+	}
+	.skills {
+		flex-direction: column;
+	}
+	.skill {
+		width: auto;
+		margin-bottom: 30px;
+	}
+	.btn{
+		background: red;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.desktop {
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn {
+		margin-left: 0;
+	    margin-top: 15px;
+	    width: 100%;
+		background: yellow;
+		
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.btn{
+		background: purple;
+	}
+}
